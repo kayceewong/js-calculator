@@ -10,7 +10,6 @@ body {
 #calculator {
   font-family: Roboto, Arial;
   background-color: black;
-  border-radius: 50px;
   max-width: 500px;
   overflow: hidden;
   background-color: hsl(0, 0%, 15%);
@@ -18,17 +17,18 @@ body {
 }
 #display {
   width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: left;
   margin-bottom: 1.5rem;
+  overflow-x: auto;
   display: block;
   font-size: 4rem;
   font-weight: bold;
-  text-align: left;
   border: none;
-  color: white;
-  background-color: hsl(0, 0%, 20%);
+  color: #ffffff;
+  outline: none;
+  background-color: transparent;
+  box-shadow: inset 3px 3px 3px #17181c, inset -3px -3px 3px #676e7e;
 }
 
 #keys {
@@ -41,10 +41,12 @@ body {
 button {
   width: 100px;
   height: 100px;
+  margin: 0.1rem;
   border: none;
   background-color: hsl(0, 0%, 30%);
+  box-shadow: 3px 3px 3px #17181c, -3px -3px 3px #676e7e;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
 }

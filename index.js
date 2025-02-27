@@ -17,3 +17,8 @@ function calculate() {
     display.value = 'Error';
   }
 }
+
+function deleteInput() {
+  const display = document.getElementById('display');
+  display.value = display.value.slice(0, -1);
+}
